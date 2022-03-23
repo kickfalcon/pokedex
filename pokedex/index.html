@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+    </head>
+    <body>
+        <div class="top">
+            <img class="mainLogo" src="./assets/img/pokemon_logo.png" alt="pokemon_logo"><br>
+        </div>
+        <div class="interact">
+            <input type="text" name="pokeName" id="pokeName" placeholder="Pikachu">
+            <button onclick="fetchPokemon()"><i class="fas fa-search"></i></button>
+            <img class="pokemonShowed" src="./assets/img/pokeball.png" alt="Pokemon" id="pokeImg" >
+            <p class="number" id="pokeNumber"></p>
+        </div>
+        <div class="stats">
+            <div class="type">
+                <p class="element" id="pokeElement"></p>
+            </div>
+            <div class="basic_stats">
+                <p class="stat" id="hp"></p>
+                <p class="stat" id="attack"></p>
+                <p class="stat" id="defense"></p>
+                <p class="stat" id="special_attack"></p>
+                <p class="stat" id="special_defense"></p>
+                <p class="stat" id="speed"></p>
+            </div>
+            <div class="moves" id="mov"></div>
+        </div>  
+        <div class="bottom"></div>   
+    </body>
+    <footer>
+        <script src="./pokedex.js"></script>
+    </footer>
+</html>
